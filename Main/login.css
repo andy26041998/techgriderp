@@ -1,0 +1,199 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #121212; /* fallback for old browsers */
+  overflow-x: hidden;
+  background-image: url(img\ src/Login.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+
+  /* code to make all text unselectable */
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* Disables selector ring */
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+/* ########################################################## */
+#logo {
+  padding: 70px 0 0 0;
+  overflow: hidden;
+  background-image: url("img\ src/logo.png");
+  background-repeat: no-repeat;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+h2 {
+  color: #2298F1;
+  font-size: 16px;
+  font-weight:600;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.flex-container {
+  width: 100vw;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 400px;
+  height: 320px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400 px;
+  height: 480px;
+  margin-top: 120px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background:  rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border:solid 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 12px;
+
+  color: rgb(143, 143, 143);
+}
+
+input {
+  border: none;
+  border-bottom: solid rgb(143, 143, 143) 1px;
+  color: white;
+  margin-bottom: 32px;
+  background: transparent;
+  height: 32px;
+  width: 300px;
+}
+
+.login-btn {
+  cursor: pointer;
+  padding-left: 128px;
+  padding-right: 128px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: solid 1px transparent;
+  background: #2298F1;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  transition: all s;
+  position: relative;
+  align-content: center;
+  border-radius: 8px;
+}
+
+.login-btn:hover {
+  color: white;
+  background: transparent;
+  border: solid 1px white;
+  border-radius: 8px;
+}
+a {
+  text-decoration: none;
+  }
+::-ms-reveal { display: none; }
+.forgot-pw {
+  color: white;
+  float: right;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  position: relative;
+  padding-left: 20px;
+  float:left;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  color:white;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color:transparent;
+  border: solid 1px white;
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: relative;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 4px;
+}

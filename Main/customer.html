@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Project Management Module</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/selectric.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./customer.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<nav class="col-md-2 d-none d-md-block sidebar">
+            <img src="img src/logo.png" style="height: 54px; width: 200px; margin-bottom: 16px; margin-left:8px; margin-top:16px;">
+			<div class="sidebar-sticky">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">
+                  <i class="zmdi zmdi-widgets"></i>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Portfolio.html">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Portfolios
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+                  <i class="zmdi zmdi-accounts"></i>
+                  Customers
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="report.html">
+                  <i class="zmdi zmdi-chart"></i>
+                  Reports
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+                  <i class="zmdi zmdi-layers"></i>
+                  Integrations
+                </a>
+					</li>
+				</ul>
+
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted">
+					<span>Saved reports</span>
+					<a class="d-flex align-items-center text-muted" href="#">
+						<i class="zmdi zmdi-plus-circle-o"></i>
+					</a>
+				</h6>
+				<ul class="nav flex-column mb-2">
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Current month
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Last quarter
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Engagement
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Year-end sale
+                </a>
+					</li>
+				</ul>
+                <ul class="navbar-nav px-3">
+					<li class="nav-item text-nowrap">
+						<a class="signout-btn" href="login.html"> Log out</a>
+					</li>
+				</ul>
+		</nav>
+    </div>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 my-3">
+        <div class="projects mb-4">
+            <input class="form-control form-control-dark w-100" style="border-radius: 0px;" type="text" placeholder="Search" aria-label="Search">
+            <div class="projects-inner">
+                <header class="projects-header">
+                    <div class="title">Client</div>
+                    <div class="count">| 64 Customers</div>
+                    <a class="add-btn" href="addclient.html">Add Client</a>
+                    <i class="download-btn">Download</i>
+                </header>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Contact Rep</th>
+                            <th>Value</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="member">
+                            <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                            <div class="member-info">
+                            <p>Google</p>
+                            <p>Singapore</p>
+                        </div>
+                        </td>
+                        <td>
+                            <p>0901558509</p>
+                            <p></p>  
+                        </td>
+                        <td>
+                            <p>contact@google.com</p>
+                            <p></p>  
+                        </td>
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$40,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                            <select class="action-box">
+                                <option>Lead</option>
+                                <option>Start project</option>
+                                <option>Send for QA</option>
+                                <option>Send invoice</option>
+                            </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <td class="member">
+                        <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                        <div class="member-info">
+                        <p>Google</p>
+                        <p>Singapore</p>
+                    </div>
+                    </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$24,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                                    <option>Lead</option>
+                                    <option>Start project</option>
+                                    <option>Send for QA</option>
+                                    <option>Send invoice</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$14,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$34,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td class="member">
+                                <figure><img src="https://news-cdn.softpedia.com/images/news2/the-new-google-logo-is-a-lesson-in-modern-design-490648-3.jpg" /></figure>
+                                <div class="member-info">
+                                <p>Google</p>
+                                <p>Singapore</p>
+                            </div>
+                            </td>
+                            <td>
+                                <p>0901558509</p>
+                                <p></p>  
+                            </td>
+                            <td>
+                                <p>contact@google.com</p>
+                                <p></p>  
+                        <td class="member">
+                            <div class="member-info">
+                                <p>Myrtle Erickson</p>
+                                <p>UK Design Team</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p>$4,670</p>
+                            <p></p>
+                        </td>
+                        <td>
+                            <form class="form" action="#" method="POST">
+                                <select class="action-box">
+                      <option>Lead</option>
+                      <option>Start project</option>
+                      <option>Send for QA</option>
+                      <option>Send invoice</option>
+                    </select>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+                <footer>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                      </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+    </body>
+		
